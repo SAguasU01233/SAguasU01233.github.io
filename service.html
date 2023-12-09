@@ -82,104 +82,295 @@
     <div class="container">
       <div class="custom_heading-container">
         <h3 class=" ">
-          OUR SERVICES
+          EVALUACION
         </h3>
       </div>
       <p class="">
-        ad minim veniam, quis nostrud exercitation ullamco
-      </p>
-      <div class="service_container ">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="box b-1">
-              <div class="img-box">
-                <img src="images/s-1.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Tab Services
-                </h6>
-                <p>
-                  adipiscing elit, sed do eiusmod tempor incididunt
-                </p>
-                <div class="btn-box">
-                  <a href="">
-                    Read More
-                  </a>
-                  <hr>
-                </div>
-              </div>
+        ESTA ES LA EVALUACION DE LA UNIDAD 3
+        <section class="service_section layout_padding">
+          <div class="container">
+            <div class="custom_heading-container">
+              <h3 class=" ">
+                VIRTUALIZACION
+              </h3>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box b-2">
-              <div class="img-box">
-                <img src="images/s-2.jpg" alt="">
+            <p class="">
+              La virtualización crea un entorno informático simulado, o virtual, en lugar de un entorno físico. A menudo, incluye versiones de hardware, sistemas operativos, dispositivos de almacenamiento, etc., generadas por un equipo. Esto permite a las organizaciones particionar un equipo o servidor físico en varias máquinas virtuales. Cada máquina virtual puede interactuar de forma independiente y ejecutar sistemas operativos o aplicaciones diferentes mientras comparten los recursos de una sola máquina host.
+        <html>
+          <head>
+              <style>
+                  .slide {
+                      position: relative;
+                      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                      margin-top: 26px;
+                  }
+      
+                  .slide-inner {
+                      position: relative;
+                      overflow: hidden;
+                      width: 75%;
+                      height: calc( 300px + 4em);
+                  }
+      
+                  .slide-open:checked + .slide-item {
+                      position: static;
+                      opacity: 50;
+                  }
+      
+                  .slide-item {
+                      position: absolute;
+                      opacity: 0;
+                      -webkit-transition: opacity 0.6s ease-out;
+                      transition: opacity 0.6s ease-out;
+                  }
+      
+                  .slide-item img {
+                      display: block;
+                      height: auto;
+                      max-width: 100%;
+                  }
+      
+                  .slide-control {
+                      background: rgba(0, 0, 0, 0.28);
+                      border-radius: 50%;
+                      color: #fff;
+                      cursor: pointer;
+                      display: none;
+                      font-size: 50px;
+                      height: 40px;
+                      line-height: 35px;
+                      position: absolute;
+                      top: 50%;
+                      -webkit-transform: translate(0, -50%);
+                      cursor: pointer;
+                      -ms-transform: translate(0, -50%);
+                      transform: translate(0, -50%);
+                      text-align: center;
+                      width: 40px;
+                      z-index: 10;
+                  }
+      
+                  .slide-control.prev {
+                      left: 2%;
+                  }
+      
+                  .slide-control.next {
+                      right: 2%;
+                  }
+      
+                  .slide-control:hover {
+                      background: rgba(0, 0, 0, 0.8);
+                      color: #aaaaaa;
+                  }
+      
+                  #slide-1:checked ~ .control-1,
+                  #slide-2:checked ~ .control-2,
+                  #slide-3:checked ~ .control-3 {
+                      display: block;
+                  }
+      
+                  .slide-indicador {
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      bottom: 2%;
+                      left: 0;
+                      right: 0;
+                      text-align: center;
+                      z-index: 10;
+                  }
+      
+                  .slide-indicador li {
+                      display: inline-block;
+                      margin: 0 5px;
+                  }
+      
+                  .slide-circulo {
+                      color: #828282;
+                      cursor: pointer;
+                      display: block;
+                      font-size: 35px;
+                  }
+      
+                  .slide-circulo:hover {
+                      color: #aaaaaa;
+                  }
+      
+                  #slide-1:checked ~ .control-1 ~ .slide-indicador 
+                       li:nth-child(1) .slide-circulo,
+                  #slide-2:checked ~ .control-2 ~ .slide-indicador 
+                        li:nth-child(2) .slide-circulo,
+                  #slide-3:checked ~ .control-3 ~ .slide-indicador 
+                        li:nth-child(3) .slide-circulo {
+                      color: #428bca;
+                  }
+      
+                  #titulo {
+                      width: 100%;
+                      position: absolute;
+                      padding: 0px;
+                      margin: 0px auto;
+                      text-align: center;
+                      font-size: 27px;
+                      color: rgba(255, 255, 255, 1);
+                      font-family: 'Open Sans', sans-serif;
+                      z-index: 9999;
+                      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                           -1px 0px 2px rgba(255, 255, 255, 0);
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="slide">
+                  <div class="slide-inner">
+                      <input class="slide-open" type="radio" id="slide-1" 
+                            name="slide" aria-hidden="true" hidden="" checked="checked">
+                      <div class="slide-item">
+                          <img src="images/virtu1.jpg">
+                      </div>
+                      <input class="slide-open" type="radio" id="slide-2" 
+                            name="slide" aria-hidden="true" hidden="">
+                      <div class="slide-item">
+                          <img src="images/virtu2.jpg">
+                      </div>
+                      <input class="slide-open" type="radio" id="slide-3" 
+                            name="slide" aria-hidden="true" hidden="">
+                      <div class="slide-item">
+                          <img src="images/virtu3.jpg">
+                      </div>
+                      <label for="slide-3" class="slide-control prev control-1">‹</label>
+                      <label for="slide-2" class="slide-control next control-1">›</label>
+                      <label for="slide-1" class="slide-control prev control-2">‹</label>
+                      <label for="slide-3" class="slide-control next control-2">›</label>
+                      <label for="slide-2" class="slide-control prev control-3">‹</label>
+                      <label for="slide-1" class="slide-control next control-3">›</label>
+                      <ol class="slide-indicador">
+                          <li>
+                              <label for="slide-1" class="slide-circulo">•</label>
+                          </li>
+                          <li>
+                              <label for="slide-2" class="slide-circulo">•</label>
+                          </li>
+                          <li>
+                              <label for="slide-3" class="slide-circulo">•</label>
+                          </li>
+                      </ol>
+                  </div>
               </div>
-              <div class="detail-box">
-                <h6>
-                  Pipe Water
-                </h6>
-                <p>
-                  adipiscing elit, sed do eiusmod tempor incididunt
-                </p>
-                <div class="btn-box">
-                  <a href="">
-                    Read More
-                  </a>
-                  <hr>
-                </div>
-              </div>
+          </body>
+      </html>
+      <!DOCTYPE html>
+      <html lang="es">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+              .slide {
+                  position: relative;
+                  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                  margin-top: 26px;
+              }
+      
+              .slide-inner {
+                  position: relative;
+                  overflow: hidden;
+                  width: 90%;
+                  margin: 0 auto; /* Añade este estilo para centrar el contenedor */
+                  height: calc(400px + 4em);
+              }
+      
+              .slide-item {
+                  position: absolute;
+                  opacity: 0;
+                  -webkit-transition: opacity 0.6s ease-out;
+                  transition: opacity 0.6s ease-out;
+                  text-align: center; /* Centra la imagen */
+              }
+      
+              .slide-item img {
+                  display: block;
+                  max-width: 107%;
+                  height: auto;
+                  margin: 0 auto; /* Añade este estilo para centrar la imagen */
+              }
+      
+              /* Otros estilos no modificados */
+      
+              #titulo {
+                  /* Estilos del título no modificados */
+              }
+          </style>
+      </head>
+      <body>
+        <section class="service_section layout_padding">
+          <div class="container">
+            <div class="custom_heading-container">
+              <h3 class=" ">
+                TIPOS DE VIRTUALIZACION
+              </h3>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box b-3">
-              <div class="img-box">
-                <img src="images/s-3.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Washing Machine
-                </h6>
-                <p>
-                  adipiscing elit, sed do eiusmod tempor incididunt
-                </p>
-                <div class="btn-box">
-                  <a href="">
-                    Read More
-                  </a>
-                  <hr>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box b-4">
-              <div class="img-box">
-                <img src="images/s-4.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Hand Washing
-                </h6>
-                <p>
-                  adipiscing elit, sed do eiusmod tempor incididunt
-                </p>
-                <div class="btn-box">
-                  <a href="">
-                    Read More
-                  </a>
-                  <hr>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <p class="">
+              Atendiendo a esto podemos citar cuatro tipos de virtualización:
 
-  <!-- end service section -->
+              Virtualización de servidores,
+              Virtualización de redes,
+              Virtualización de almacenamiento,
+              Virtualización de escritorios.
+              <body>
+                <img src="images/TV1.jpg" alt="Descripción de la imagen" width="1000px">
+        <html>
+          <head>
+            <section class="service_section layout_padding">
+              <div class="container">
+                <div class="custom_heading-container">
+                  <h3 class=" ">
+                    DOCKER
+                  </h3>
+                </div>
+                <p class="">
+                  Docker es una plataforma de contenedorización que se puede utilizar para empaquetar software en contenedores y ejecutarlos en máquinas de destino. 
+                  Los contenedores de Docker se ejecutan en cualquier máquina o máquina virtual en la que esté instalado el motor de Docker. 
+                  Se ejecutan sin conocer la arquitectura del sistema subyacente. Un contenedor de Docker es un entorno de ejecución que tiene todos los componentes necesarios 
+                  (como el código, las dependencias y las bibliotecas) para ejecutar el código de la aplicación sin utilizar las dependencias de la máquina host.Una imagen de Docker, o una imagen de contenedor, es un archivo ejecutable e independiente que se utiliza para crear un contenedor. Esta imagen de contenedor contiene las bibliotecas, las dependencias y los archivos que el contenedor necesita para ejecutarse.
+                  <body>
+                    <img src="images/dock.png" alt="Descripción de la imagen" width="1000px">
+                    
+            <html>
+              <head>
+                    <section class="service_section layout_padding">
+                      <div class="container">
+                        <div class="custom_heading-container">
+                          <h3 class=" ">
+                            DOCKER
+                          </h3>
+                        </div>
+                        <p class="">
+                          Docker es una plataforma de contenedorización que se puede utilizar para empaquetar software en contenedores y ejecutarlos en máquinas de destino. 
+                          Los contenedores de Docker se ejecutan en cualquier máquina o máquina virtual en la que esté instalado el motor de Docker. 
+                          Se ejecutan sin conocer la arquitectura del sistema subyacente. Un contenedor de Docker es un entorno de ejecución que tiene todos los componentes necesarios 
+                          (como el código, las dependencias y las bibliotecas) para ejecutar el código de la aplicación sin utilizar las dependencias de la máquina host.Una imagen de Docker, o una imagen de contenedor, es un archivo ejecutable e independiente que se utiliza para crear un contenedor. Esta imagen de contenedor contiene las bibliotecas, las dependencias y los archivos que el contenedor necesita para ejecutarse.
+                          <body>
+                            <img src="images/dock.png" alt="Descripción de la imagen" width="1000px">
+                            
+                    <html>
+                      <head>
+                        <section class="service_section layout_padding">
+                          <div class="container">
+                            <div class="custom_heading-container">
+                              <h3 class=" ">
+                                IMAGEN DEL CURSO
+                              </h3>
+                            </div>
+                            <p class="">
+                              ESTA ES UNA FOTO DEL CURSO
+                              <body>
+                                <img src="images/CURSO.jpg" alt="Descripción de la imagen" width="1000px">
+                        <html>
+                          <head>
+          <!-- Contenido del body (código de las diapositivas) -->
+      </body>
+      </html>
 
   <!-- info section -->
   <section class="info_section layout_padding">
@@ -283,7 +474,7 @@
               </li>
               <li>
                 <a href="contact.html">
-                  Contactanos
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -306,8 +497,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- end info_section -->
 
